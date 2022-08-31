@@ -178,6 +178,10 @@ public function ViewSubmitted(){
     return view('view_registered', compact('user'));
 
 }
+public function MakeComplain(){
+    $user = Auth::guard('web')->user();
+    return view('make_complain', compact('user'));
+}
 
 
 

@@ -241,6 +241,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
             </li>
 
+               <li class="nav-item">
+              <a href="/comp" class="nav-link">
+                <i class="nav-icon fas fa-laptop"></i>
+                
+                <p>
+                  Make a complain
+                  
+                </p>
+              </a>
+            </li>
+
             
 
              <li class="nav-item">

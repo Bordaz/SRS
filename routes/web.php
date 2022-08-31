@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\EmailController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\CourseFormController;
@@ -105,8 +106,10 @@ Route::middleware('auth')->group(function(){
         Route::get('/view', 'ViewSubmitted');
         Route::get('stu_profile', 'studentDashboard');
         Route::get('/userprofile', 'studentProfile');
+        Route::get('/comp', 'MakeComplain');
 		Route::get('/logoutuser', 'logoutUser');
 	});
+    
    
 
 });
@@ -136,3 +139,11 @@ Route::middleware('auth')->group(function(){
 
  
 });
+Route::middleware('auth')->group(function(){
+    Route::controller(EmailController::class)->group(function(){
+
+        Route::post('/complain', 'ComplainSubmit');
+
+    });
+    
+    });

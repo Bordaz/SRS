@@ -3,7 +3,7 @@
 
 <div class="col-sm-8"> 
     
-     <table class="table table-bordered">
+     <table class="table table-bordered content-center">
           <thead>
           
           <tr>
